@@ -1,7 +1,9 @@
 function um() {
     var custo = 0;
     custo = Math.abs(prompt("Digite o custo da viagem"));
-    console.log(custo);
+    localStorage.setItem('custo', custo);
 }
 
-um();
+function retornaCusto(){
+    custoh = localStorage.custo
+}
